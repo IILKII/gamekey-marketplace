@@ -1,0 +1,7 @@
+Django==6.0.6
+djangorestframework
+requests
+python-decouple
+celery
+redis
+gunicorn
