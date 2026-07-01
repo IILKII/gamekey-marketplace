@@ -127,3 +127,23 @@ def create_order(request):
         },
         status=status.HTTP_201_CREATED
     )
+
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("""
+    <h1>🎮 Game Key Marketplace API</h1>
+    <p>Backend is running successfully.</p>
+
+    <h2>Available Endpoints</h2>
+
+    <ul>
+        <li>/admin/</li>
+        <li>/api/games/</li>
+        <li>/api/publishers/</li>
+        <li>/api/register/</li>
+        <li>/api/orders/</li>
+    </ul>
+
+    <p>Created using Django REST Framework.</p>
+    """)
